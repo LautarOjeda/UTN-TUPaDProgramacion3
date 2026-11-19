@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Desarrollo y Tecnología - UTN</title>
+</head>
+<body>
+    <!-- 1. Header -->
+    <header>
+        <h1>Bitácora de Desarrollo Web y Backend</h1>
+        <nav aria-label="Navegación principal del blog">
+            <ul>
+                <li><a href="#articulo-1" aria-label="Ir al artículo sobre semántica HTML">Semántica HTML</a></li>
+                <li><a href="#articulo-2" aria-label="Ir al artículo sobre buenas prácticas de accesibilidad">Accesibilidad Web</a></li>
+                <li><a href="#contactos" aria-label="Ir a la tabla de contactos en el pie de página">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. Main -->
+    <main tabindex="0">
+        <!-- Artículo 1 (con lista ordenada <ol>) -->
+        <article id="articulo-1">
+            <h2>La importancia de la semántica en HTML5</h2>
+            <p>
+                Utilizar etiquetas semánticas permite que tanto los navegadores como los motores de búsqueda y lectores de pantalla comprendan el significado real de cada bloque de contenido, en lugar de depender únicamente de contenedores genéricos.
+            </p>
+            <p>Pasos clave para estructurar un documento semántico:</p>
+            <ol>
+                <li>Definir la cabecera del sitio con la etiqueta <code>&lt;header&gt;</code>.</li>
+                <li>Delimitar el contenido principal y único dentro de <code>&lt;main&gt;</code>.</li>
+                <li>Separar entradas independientes utilizando <code>&lt;article&gt;</code>.</li>
+                <li>Ubicar información institucional o tablas de referencia en el <code>&lt;footer&gt;</code>.</li>
+            </ol>
+        </article>
+
+        <hr>
+
+        <!-- Artículo 2 (con lista desordenada <ul>) -->
+        <article id="articulo-2">
+            <h2>Buenas prácticas de accesibilidad web</h2>
+            <p>
+                Construir sitios web accesibles garantiza que cualquier persona, independientemente de sus capacidades físicas o del dispositivo que utilice, pueda navegar e interactuar con la información sin barreras.
+            </p>
+            <ul>
+                <li>Incluir atributos <code>aria-label</code> para clarificar el propósito de enlaces y barras de navegación.</li>
+                <li>Gestionar correctamente el orden de foco mediante <code>tabindex</code>.</li>
+                <li>Estructurar las tablas con encabezados claros usando <code>&lt;thead&gt;</code> y <code>&lt;th&gt;</code>.</li>
+            </ul>
+        </article>
+    </main>
+
+    <hr>
+
+    <!-- 3. Aside -->
+    <aside aria-label="Enlaces relacionados y documentación externa">
+        <h2>Documentación y Recursos Relacionados</h2>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer" aria-label="Abrir documentación oficial de HTML en MDN Web Docs en una nueva pestaña">
+                    MDN Web Docs: Guía de HTML
+                </a>
+            </li>
+            <li>
+                <a href="https://www.w3.org/WAI/standards-guidelines/wcag/es" target="_blank" rel="noopener noreferrer" aria-label="Abrir pautas de accesibilidad WCAG de la W3C en una nueva pestaña">
+                    W3C: Pautas de Accesibilidad para el Contenido Web (WCAG)
+                </a>
+            </li>
+            <li>
+                <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer" aria-label="Abrir el validador oficial de código HTML de la W3C en una nueva pestaña">
+                    Validador de marcado HTML de W3C
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <hr>
+
+    <!-- 4. Footer con tabla de contactos -->
+    <footer id="contactos">
+        <h2>Equipo Editorial y Contactos</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Cargo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lautaro Ojeda</td>
+                    <td>lautaro.ojeda@ejemplo.com</td>
+                    <td>Editor Principal &amp; Desarrollador</td>
+                </tr>
+                <tr>
+                    <td>Martina Gómez</td>
+                    <td>martina.gomez@ejemplo.com</td>
+                    <td>Especialista en Accesibilidad Web</td>
+                </tr>
+                <tr>
+                    <td>Lucas Fernández</td>
+                    <td>lucas.fernandez@ejemplo.com</td>
+                    <td>Redactor Técnico</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&copy; 2026 Bitácora de Desarrollo Web - UTN.</p>
+    </footer>
+</body>
+</html>

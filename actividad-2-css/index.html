@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico 1: Introducción a CSS</title>
+    <!-- 1.b Linkear ambos archivos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trabajo Práctico: Introducción a CSS</h1>
+        <p>Resolución completa con ejemplos prácticos</p>
+    </header>
+
+    <main>
+        <!-- 1. Introducción a CSS -->
+        <section>
+            <h2>1. Introducción a CSS</h2>
+            <p>
+                CSS significa Cascading Style Sheets (Hojas de Estilo en Cascada). Es el lenguaje que se utiliza para dar diseño, colores, tipografías y estructura visual a los documentos HTML, permitiendo separar el contenido de su presentación.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- 2. Selectores en CSS -->
+        <section>
+            <h2>2. Selectores en CSS</h2>
+            <p id="parrafo-id">Este párrafo tiene un selector por ID (#parrafo-id).</p>
+            <p class="parrafo-clase">Este párrafo tiene un selector por CLASS (.parrafo-clase).</p>
+            <p>Este párrafo tiene un selector por TAG (p).</p>
+        </section>
+
+        <hr>
+
+        <!-- 3. Modificación de Texto -->
+        <section>
+            <h2>3. Modificación de Texto</h2>
+            <h3 class="titulo-estilizado">Título con sombra y mayúsculas</h3>
+            <p class="texto-espaciado">
+                Este párrafo tiene mayor interlineado (line-height) y espaciado entre letras (letter-spacing) para mejorar la legibilidad y notar la diferencia visual.
+            </p>
+            <blockquote class="cita-personalizada">
+                "Esta es una cita con cursiva y otra familia tipográfica distinta."
+            </blockquote>
+        </section>
+
+        <hr>
+
+        <!-- 4. Modelo de Caja -->
+        <section>
+            <h2>4. Modelo de Caja</h2>
+            <div class="tarjeta-perfil">
+                <div class="cuadrado-color"></div>
+                <h3>Tarjeta de Perfil</h3>
+                <p>
+                    Esta tarjeta muestra border, padding, margin, background-color, border-radius y box-shadow.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- 5. Display y Visibility -->
+        <section>
+            <h2>5. Display y Visibility</h2>
+
+            <h3>Block (se apilan verticalmente)</h3>
+            <div class="galeria">
+                <div class="tarjeta-mini caja-block">Tarjeta 1</div>
+                <div class="tarjeta-mini caja-block">Tarjeta 2</div>
+                <div class="tarjeta-mini caja-block">Tarjeta 3</div>
+            </div>
+
+            <h3>Inline (en línea, pierden ancho/alto y márgenes verticales)</h3>
+            <div class="galeria">
+                <div class="tarjeta-mini caja-inline">Tarjeta 1</div>
+                <div class="tarjeta-mini caja-inline">Tarjeta 2</div>
+                <div class="tarjeta-mini caja-inline">Tarjeta 3</div>
+            </div>
+
+            <h3>Inline-block (en línea, conservando el modelo de caja completo)</h3>
+            <div class="galeria">
+                <div class="tarjeta-mini caja-inline-block">Tarjeta 1</div>
+                <div class="tarjeta-mini caja-inline-block">Tarjeta 2</div>
+                <div class="tarjeta-mini caja-inline-block">Tarjeta 3</div>
+            </div>
+
+            <h3>Prueba de ocultamiento</h3>
+            <button type="button" class="btn-visible">Botón Visible</button>
+            <button type="button" class="btn-display-none">Botón Display None</button>
+            <button type="button" class="btn-visibility-hidden">Botón Visibility Hidden</button>
+            <button type="button" class="btn-visible">Botón Referencia</button>
+
+            <p>
+                <strong>Explicación:</strong> La diferencia es que <code>display: none;</code> elimina completamente el elemento del flujo de la página (no ocupa espacio), mientras que <code>visibility: hidden;</code> vuelve invisible al elemento pero sigue ocupando su lugar físico en el diseño.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- 6. Variables CSS -->
+        <section>
+            <h2>6. Variables CSS</h2>
+            <div class="tarjeta-variables">
+                <h3>Tarjeta con Variables CSS</h3>
+                <p>
+                    El color de fondo, texto y borde se controlan desde :root mediante variables CSS reutilizables.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Resolución del Trabajo Práctico - Programación III - UTN</p>
+    </footer>
+</body>
+</html>

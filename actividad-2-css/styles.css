@@ -1,0 +1,169 @@
+/* =========================================
+   6. VARIABLES CSS (:root)
+   Cambiá estos valores para modificar todo el tema
+   ========================================= */
+:root {
+    --color-fondo: #e0f2fe;
+    --color-texto: #0f172a;
+    --color-acento: #0284c7;
+}
+
+/* Estilos generales de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    margin: 20px;
+}
+
+header, footer {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+section {
+    margin: 25px 0;
+}
+
+/* =========================================
+   2. SELECTORES EN CSS (ID, CLASS, TAG)
+   ========================================= */
+/* Selector por TAG */
+p {
+    color: #333333;
+    font-size: 16px;
+}
+
+/* Selector por ID */
+#parrafo-id {
+    color: #b91c1c;
+    font-weight: bold;
+    background-color: #fee2e2;
+    padding: 8px;
+}
+
+/* Selector por CLASS */
+.parrafo-clase {
+    color: #047857;
+    background-color: #d1fae5;
+    padding: 8px;
+}
+
+/* =========================================
+   3. MODIFICACIÓN DE TEXTO
+   ========================================= */
+.titulo-estilizado {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+    color: #1e3a8a;
+}
+
+.texto-espaciado {
+    line-height: 2.2;
+    letter-spacing: 3px;
+}
+
+.cita-personalizada {
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f9fafb;
+    border-left: 4px solid #6b7280;
+    padding: 10px 15px;
+}
+
+/* =========================================
+   4. MODELO DE CAJA (BOX MODEL)
+   ========================================= */
+/*
+   DIFERENCIA ENTRE box-sizing: border-box Y content-box:
+   - content-box (valor por defecto): el width y height solo miden el contenido;
+     si agregamos padding o border, el tamaño total de la caja crece por fuera.
+   - border-box: el width y height incluyen el contenido, el padding y el border
+     dentro de la medida total declarada, evitando desbordes inesperados.
+*/
+.tarjeta-perfil {
+    box-sizing: border-box;
+    width: 300px;
+    background-color: #fef3c7;
+    border: 3px solid #d97706;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cuadrado-color {
+    width: 50px;
+    height: 50px;
+    background-color: #d97706;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   5. DISPLAY Y VISIBILITY
+   ========================================= */
+.galeria {
+    margin-bottom: 20px;
+}
+
+.tarjeta-mini {
+    width: 140px;
+    height: 70px;
+    background-color: #e0e7ff;
+    border: 2px solid #4338ca;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.caja-block {
+    display: block;
+}
+
+.caja-inline {
+    display: inline;
+}
+
+.caja-inline-block {
+    display: inline-block;
+}
+
+.btn-visible {
+    padding: 8px 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-display-none {
+    display: none;
+}
+
+.btn-visibility-hidden {
+    visibility: hidden;
+}
+
+/* =========================================
+   6. TARJETA USANDO VARIABLES CSS
+   ========================================= */
+.tarjeta-variables {
+    box-sizing: border-box;
+    width: 320px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border: 3px solid var(--color-acento);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-variables h3,
+.tarjeta-variables p {
+    color: var(--color-texto);
+}

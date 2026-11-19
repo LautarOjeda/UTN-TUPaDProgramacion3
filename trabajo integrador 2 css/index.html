@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web - Diseño Responsivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- =========================================
+         HEADER RESPONSIVO
+         ========================================= -->
+    <header class="header">
+        <div class="header__container">
+            <a href="#inicio" class="header__logo">Mi sitio web</a>
+
+            <!-- Control para desplegar menú en Mobile -->
+            <input type="checkbox" id="menu-toggle" class="header__checkbox" aria-label="Abrir menú">
+            <label for="menu-toggle" class="header__hamburger" aria-label="Menú">
+                &#9776;
+            </label>
+
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav__link">Sobre nosotros</a></li>
+                    <li><a href="#servicios" class="nav__link">Servicios</a></li>
+                    <li><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+         ========================================= -->
+    <main class="main" id="inicio">
+        <!-- Banner Hero -->
+        <section class="hero">
+            <h1 class="hero__title">Bienvenido a Nuestro Sitio Web</h1>
+            <p class="hero__subtitle">Explora nuestros servicios y descubre cómo podemos ayudarte</p>
+            <a href="#servicios" class="hero__btn">Descubrir más</a>
+        </section>
+
+        <!-- Sección Nuestras Características -->
+        <section class="features" id="servicios">
+            <h2 class="features__title">Nuestras Características</h2>
+
+            <div class="features__grid">
+                <article class="card">
+                    <h3 class="card__title">Calidad</h3>
+                    <p class="card__text">Ofrecemos productos y servicios de la más alta calidad.</p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Innovación</h3>
+                    <p class="card__text">Nos mantenemos a la vanguardia con las últimas tecnologías.</p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Soporte</h3>
+                    <p class="card__text">Estamos aquí para ayudarte en todo momento.</p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Sostenibilidad</h3>
+                    <p class="card__text">Comprometidos con prácticas que protegen el medio ambiente.</p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Confianza</h3>
+                    <p class="card__text">Construimos relaciones basadas en la transparencia y la confianza.</p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Personalización</h3>
+                    <p class="card__text">Ofrecemos soluciones adaptadas a las necesidades específicas de cada cliente.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+    <footer class="footer" id="contacto">
+        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
